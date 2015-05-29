@@ -38,15 +38,15 @@ class SSValidationTextField: UITextField {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldEdited:", name: UITextFieldTextDidChangeNotification, object: nil)
     }
 
-    func textFieldEdited(aNotificaiton: NSNotification) {
-        if self == aNotificaiton.object! as! SSValidationTextField {
+    func textFieldEdited(aNotificaiton: NSNotification?) {
+//        if self == aNotificaiton.object! as! SSValidationTextField {
             var currentString = self.text
             if self.validityFunction != nil {
                 if delaytime != 0 {
                     setTimerForValidation()
                 }
             }
-        }
+//        }
     }
     private func setTimerForValidation() {
         if delayTimer != nil {
@@ -58,6 +58,12 @@ class SSValidationTextField: UITextField {
 
     func checkValidity() {
         var currentString = self.text
+        if currentString.isEmpty {
+            if errorLabel != nil {
+                errorLabel!.hidden = true
+            }
+            return
+        }
         if self.validityFunction!(currentString) {
             println("yes is valid")
             self.setLabel(true)
@@ -73,6 +79,7 @@ class SSValidationTextField: UITextField {
             errorLabel?.font = UIFont.systemFontOfSize(10)
             self.addSubview(errorLabel!)
         }
+        errorLabel!.hidden = false
         if isValid {
             errorLabel?.textColor = successTextColor
             errorLabel?.backgroundColor = successBackgroundColor

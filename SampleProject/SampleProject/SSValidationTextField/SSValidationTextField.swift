@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@IBDesignable
 class SSValidationTextField: UITextField {
 
     var validityFunction: ((String) -> Bool)?
@@ -38,16 +38,17 @@ class SSValidationTextField: UITextField {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldEdited:", name: UITextFieldTextDidChangeNotification, object: nil)
     }
 
-    func textFieldEdited(aNotificaiton: NSNotification?) {
-//        if self == aNotificaiton.object! as! SSValidationTextField {
+    func textFieldEdited(aNotificaiton: NSNotification) {
+        if self == aNotificaiton.object! as! SSValidationTextField {
             var currentString = self.text
             if self.validityFunction != nil {
                 if delaytime != 0 {
                     setTimerForValidation()
                 }
             }
-//        }
+        }
     }
+
     private func setTimerForValidation() {
         if delayTimer != nil {
             delayTimer?.invalidate()
@@ -96,11 +97,15 @@ class SSValidationTextField: UITextField {
         if errorLabel != nil {
             UIView.animateWithDuration(animationDuration, animations: { () -> Void in
                 self.errorLabel!.transform = CGAffineTransformMakeScale(1.1, 1.1)
-            }) { (completed) -> Void in
-                UIView.animateWithDuration(self.animationDuration, animations: { () -> Void in
-                    self.errorLabel!.transform = CGAffineTransformMakeScale(1.0, 1.0)
-                })
+                }) { (completed) -> Void in
+                    UIView.animateWithDuration(self.animationDuration, animations: { () -> Void in
+                        self.errorLabel!.transform = CGAffineTransformMakeScale(1.0, 1.0)
+                    })
             }
         }
+    }
+
+    override func prepareForInterfaceBuilder() {
+        setup()
     }
 }

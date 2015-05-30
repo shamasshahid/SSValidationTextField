@@ -13,12 +13,12 @@ class SSValidationTextField: UITextField {
     var validityFunction: ((String) -> Bool)?
     var delaytime: Int = 0
     private var delayTimer: NSTimer? = nil
-    var errorMessage: String = "Invalid"
     private var errorLabel: UILabel? = nil
 
+    @IBInspectable var errorText: String = "Invalid"
     var errorTextColor: UIColor = UIColor.redColor()
     var errorBackgroundColor: UIColor = UIColor.clearColor()
-    var successMessage: String = "Ok"
+    @IBInspectable var successText: String = "Ok"
     var successTextColor: UIColor = UIColor.greenColor()
     var successBackgroundColor: UIColor = UIColor.clearColor()
 
@@ -84,11 +84,11 @@ class SSValidationTextField: UITextField {
         if isValid {
             errorLabel?.textColor = successTextColor
             errorLabel?.backgroundColor = successBackgroundColor
-            errorLabel!.text = successMessage
+            errorLabel!.text = successText
         } else {
             errorLabel?.textColor = errorTextColor
             errorLabel?.backgroundColor = errorBackgroundColor
-            errorLabel!.text = errorMessage
+            errorLabel!.text = errorText
         }
         self.animationLabel()
     }

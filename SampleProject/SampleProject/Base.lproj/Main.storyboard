@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-TF-luf" customClass="SSValidationTextField" customModule="SampleProject" customModuleProvider="target">
-                                <rect key="frame" x="225" y="275" width="150" height="50"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Validation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-TF-luf" customClass="SSValidationTextField" customModule="SampleProject" customModuleProvider="target">
+                                <rect key="frame" x="225" y="217" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="1xd-Tc-fhN"/>
                                     <constraint firstAttribute="height" constant="50" id="7sp-X3-uvB"/>
@@ -28,12 +28,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="d7w-TF-luf" secondAttribute="centerY" id="N4m-Rr-wp8"/>
+                            <constraint firstAttribute="centerY" secondItem="d7w-TF-luf" secondAttribute="centerY" constant="58" id="N4m-Rr-wp8"/>
                             <constraint firstAttribute="centerX" secondItem="d7w-TF-luf" secondAttribute="centerX" id="csL-f9-CtF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="validationTextField" destination="d7w-TF-luf" id="WcG-0a-v71"/>
+                        <outlet property="emailValidationTextField" destination="d7w-TF-luf" id="PPQ-Fz-1Ja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

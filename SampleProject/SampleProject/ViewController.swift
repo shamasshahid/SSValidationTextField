@@ -8,15 +8,41 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
-    @IBOutlet weak var validationTextField: SSValidationTextField!
+    @IBOutlet var emailValidationTextField: SSValidationTextField!
+    var phoneValidationTextField: SSValidationTextField?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        validationTextField.validityFunction = self.isValidEmail
-        validationTextField.delaytime = 1
-        validationTextField.becomeFirstResponder()
+        emailValidationTextField.validityFunction = self.isValidEmail
+        emailValidationTextField.delaytime = 1
+        emailValidationTextField.becomeFirstResponder()
+
+        phoneValidationTextField = SSValidationTextField(frame: CGRectMake(200, 200, 150, 50))
+        phoneValidationTextField!.validityFunction = self.isValidPhone
+        phoneValidationTextField!.delaytime = 0.5
+        phoneValidationTextField!.errorText = "Incorrect Format"
+        phoneValidationTextField!.successText = "Valid Format"
+        phoneValidationTextField!.borderStyle = UITextBorderStyle.RoundedRect
+        phoneValidationTextField!.placeholder = "Phone Validation"
+        phoneValidationTextField!.font = UIFont.systemFontOfSize(14)
+//        self.view.addSubview(phoneValidationTextField!)
+
+//        layout(emailValidationTextField, phoneValidationTextField!) { view1, view2 in
+//            view2.height == 50
+//            view2.width == 150
+//            view2.centerX == view2.superview!.centerX
+//            view2.centerY == view2.superview!.centerY
+//        }
+    }
+
+    func isValidPhone(stringValue: String) -> Bool {
+        let phoneRegEx = "^\\d{10}$"
+        var phoneTest = NSPredicate(format: "SELF MATCHES %@", phoneRegEx)
+        return phoneTest.evaluateWithObject(stringValue)
     }
 
     func isValidEmail(stringValue: String) ->Bool {
@@ -29,7 +55,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

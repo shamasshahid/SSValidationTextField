@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AFE8D121B1A13CC00CFB2DA /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8CFC1B1A13CC00CFB2DA /* Align.swift */; };
+		1AFE8D131B1A13CC00CFB2DA /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8CFE1B1A13CC00CFB2DA /* Coefficients.swift */; };
+		1AFE8D141B1A13CC00CFB2DA /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8CFF1B1A13CC00CFB2DA /* Compound.swift */; };
+		1AFE8D151B1A13CC00CFB2DA /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D001B1A13CC00CFB2DA /* Constraint.swift */; };
+		1AFE8D161B1A13CC00CFB2DA /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D011B1A13CC00CFB2DA /* ConstraintGroup.swift */; };
+		1AFE8D171B1A13CC00CFB2DA /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D021B1A13CC00CFB2DA /* Context.swift */; };
+		1AFE8D181B1A13CC00CFB2DA /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D031B1A13CC00CFB2DA /* Dimension.swift */; };
+		1AFE8D191B1A13CC00CFB2DA /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D041B1A13CC00CFB2DA /* Distribute.swift */; };
+		1AFE8D1A1B1A13CC00CFB2DA /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D051B1A13CC00CFB2DA /* Edge.swift */; };
+		1AFE8D1B1B1A13CC00CFB2DA /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D061B1A13CC00CFB2DA /* Edges.swift */; };
+		1AFE8D1C1B1A13CC00CFB2DA /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D071B1A13CC00CFB2DA /* Expression.swift */; };
+		1AFE8D1D1B1A13CC00CFB2DA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D081B1A13CC00CFB2DA /* Extensions.swift */; };
+		1AFE8D1E1B1A13CC00CFB2DA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AFE8D091B1A13CC00CFB2DA /* Info.plist */; };
+		1AFE8D1F1B1A13CC00CFB2DA /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D0A1B1A13CC00CFB2DA /* Layout.swift */; };
+		1AFE8D201B1A13CC00CFB2DA /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D0B1B1A13CC00CFB2DA /* LayoutProxy.swift */; };
+		1AFE8D211B1A13CC00CFB2DA /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D0C1B1A13CC00CFB2DA /* Point.swift */; };
+		1AFE8D221B1A13CC00CFB2DA /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D0D1B1A13CC00CFB2DA /* Priority.swift */; };
+		1AFE8D231B1A13CC00CFB2DA /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D0E1B1A13CC00CFB2DA /* Property.swift */; };
+		1AFE8D241B1A13CC00CFB2DA /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D0F1B1A13CC00CFB2DA /* Size.swift */; };
+		1AFE8D251B1A13CC00CFB2DA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D101B1A13CC00CFB2DA /* View.swift */; };
+		1AFE8D261B1A13CC00CFB2DA /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8D111B1A13CC00CFB2DA /* ViewUtils.swift */; };
 		2DD57D021B1860A4001BCAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD57D011B1860A4001BCAF8 /* AppDelegate.swift */; };
 		2DD57D041B1860A4001BCAF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD57D031B1860A4001BCAF8 /* ViewController.swift */; };
 		2DD57D071B1860A4001BCAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD57D051B1860A4001BCAF8 /* Main.storyboard */; };
@@ -27,6 +48,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AFE8CFC1B1A13CC00CFB2DA /* Align.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Align.swift; sourceTree = "<group>"; };
+		1AFE8CFD1B1A13CC00CFB2DA /* Cartography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cartography.h; sourceTree = "<group>"; };
+		1AFE8CFE1B1A13CC00CFB2DA /* Coefficients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coefficients.swift; sourceTree = "<group>"; };
+		1AFE8CFF1B1A13CC00CFB2DA /* Compound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
+		1AFE8D001B1A13CC00CFB2DA /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		1AFE8D011B1A13CC00CFB2DA /* ConstraintGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintGroup.swift; sourceTree = "<group>"; };
+		1AFE8D021B1A13CC00CFB2DA /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		1AFE8D031B1A13CC00CFB2DA /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		1AFE8D041B1A13CC00CFB2DA /* Distribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distribute.swift; sourceTree = "<group>"; };
+		1AFE8D051B1A13CC00CFB2DA /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		1AFE8D061B1A13CC00CFB2DA /* Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edges.swift; sourceTree = "<group>"; };
+		1AFE8D071B1A13CC00CFB2DA /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		1AFE8D081B1A13CC00CFB2DA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1AFE8D091B1A13CC00CFB2DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFE8D0A1B1A13CC00CFB2DA /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		1AFE8D0B1B1A13CC00CFB2DA /* LayoutProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
+		1AFE8D0C1B1A13CC00CFB2DA /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		1AFE8D0D1B1A13CC00CFB2DA /* Priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		1AFE8D0E1B1A13CC00CFB2DA /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		1AFE8D0F1B1A13CC00CFB2DA /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		1AFE8D101B1A13CC00CFB2DA /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1AFE8D111B1A13CC00CFB2DA /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		2DD57CFC1B1860A4001BCAF8 /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD57D001B1860A4001BCAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DD57D011B1860A4001BCAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +101,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AFE8CFB1B1A13CC00CFB2DA /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE8CFC1B1A13CC00CFB2DA /* Align.swift */,
+				1AFE8CFD1B1A13CC00CFB2DA /* Cartography.h */,
+				1AFE8CFE1B1A13CC00CFB2DA /* Coefficients.swift */,
+				1AFE8CFF1B1A13CC00CFB2DA /* Compound.swift */,
+				1AFE8D001B1A13CC00CFB2DA /* Constraint.swift */,
+				1AFE8D011B1A13CC00CFB2DA /* ConstraintGroup.swift */,
+				1AFE8D021B1A13CC00CFB2DA /* Context.swift */,
+				1AFE8D031B1A13CC00CFB2DA /* Dimension.swift */,
+				1AFE8D041B1A13CC00CFB2DA /* Distribute.swift */,
+				1AFE8D051B1A13CC00CFB2DA /* Edge.swift */,
+				1AFE8D061B1A13CC00CFB2DA /* Edges.swift */,
+				1AFE8D071B1A13CC00CFB2DA /* Expression.swift */,
+				1AFE8D081B1A13CC00CFB2DA /* Extensions.swift */,
+				1AFE8D091B1A13CC00CFB2DA /* Info.plist */,
+				1AFE8D0A1B1A13CC00CFB2DA /* Layout.swift */,
+				1AFE8D0B1B1A13CC00CFB2DA /* LayoutProxy.swift */,
+				1AFE8D0C1B1A13CC00CFB2DA /* Point.swift */,
+				1AFE8D0D1B1A13CC00CFB2DA /* Priority.swift */,
+				1AFE8D0E1B1A13CC00CFB2DA /* Property.swift */,
+				1AFE8D0F1B1A13CC00CFB2DA /* Size.swift */,
+				1AFE8D101B1A13CC00CFB2DA /* View.swift */,
+				1AFE8D111B1A13CC00CFB2DA /* ViewUtils.swift */,
+			);
+			path = Cartography;
+			sourceTree = "<group>";
+		};
 		2DD57CF31B1860A4001BCAF8 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +156,7 @@
 				2DD57D031B1860A4001BCAF8 /* ViewController.swift */,
 				2DD57D051B1860A4001BCAF8 /* Main.storyboard */,
 				2DD57D081B1860A4001BCAF8 /* Images.xcassets */,
+				1AFE8CFB1B1A13CC00CFB2DA /* Cartography */,
 				2DD57D0A1B1860A4001BCAF8 /* LaunchScreen.xib */,
 				2DD57CFF1B1860A4001BCAF8 /* Supporting Files */,
 			);
@@ -203,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFE8D1E1B1A13CC00CFB2DA /* Info.plist in Resources */,
 				2DD57D071B1860A4001BCAF8 /* Main.storyboard in Resources */,
 				2DD57D0C1B1860A4001BCAF8 /* LaunchScreen.xib in Resources */,
 				2DD57D091B1860A4001BCAF8 /* Images.xcassets in Resources */,
@@ -223,8 +297,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFE8D221B1A13CC00CFB2DA /* Priority.swift in Sources */,
+				1AFE8D241B1A13CC00CFB2DA /* Size.swift in Sources */,
+				1AFE8D131B1A13CC00CFB2DA /* Coefficients.swift in Sources */,
+				1AFE8D261B1A13CC00CFB2DA /* ViewUtils.swift in Sources */,
+				1AFE8D1B1B1A13CC00CFB2DA /* Edges.swift in Sources */,
 				2DD57D041B1860A4001BCAF8 /* ViewController.swift in Sources */,
+				1AFE8D1A1B1A13CC00CFB2DA /* Edge.swift in Sources */,
+				1AFE8D191B1A13CC00CFB2DA /* Distribute.swift in Sources */,
+				1AFE8D1F1B1A13CC00CFB2DA /* Layout.swift in Sources */,
+				1AFE8D1C1B1A13CC00CFB2DA /* Expression.swift in Sources */,
+				1AFE8D161B1A13CC00CFB2DA /* ConstraintGroup.swift in Sources */,
+				1AFE8D151B1A13CC00CFB2DA /* Constraint.swift in Sources */,
+				1AFE8D231B1A13CC00CFB2DA /* Property.swift in Sources */,
+				1AFE8D121B1A13CC00CFB2DA /* Align.swift in Sources */,
 				2DD57D251B186128001BCAF8 /* SSValidationTextField.swift in Sources */,
+				1AFE8D1D1B1A13CC00CFB2DA /* Extensions.swift in Sources */,
+				1AFE8D171B1A13CC00CFB2DA /* Context.swift in Sources */,
+				1AFE8D141B1A13CC00CFB2DA /* Compound.swift in Sources */,
+				1AFE8D211B1A13CC00CFB2DA /* Point.swift in Sources */,
+				1AFE8D201B1A13CC00CFB2DA /* LayoutProxy.swift in Sources */,
+				1AFE8D181B1A13CC00CFB2DA /* Dimension.swift in Sources */,
+				1AFE8D251B1A13CC00CFB2DA /* View.swift in Sources */,
 				2DD57D021B1860A4001BCAF8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +517,7 @@
 				2DD57D1D1B1860A4001BCAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DD57D1E1B1860A4001BCAF8 /* Build configuration list for PBXNativeTarget "SampleProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +526,7 @@
 				2DD57D201B1860A4001BCAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

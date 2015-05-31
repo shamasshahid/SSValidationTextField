@@ -11,7 +11,7 @@ import UIKit
 class SSValidationTextField: UITextField {
 
     var validityFunction: ((String) -> Bool)?
-    var delaytime: Int = 0
+    var delaytime: NSTimeInterval = 0
     private var delayTimer: NSTimer? = nil
     private var errorLabel: UILabel? = nil
 
@@ -38,6 +38,10 @@ class SSValidationTextField: UITextField {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldEdited:", name: UITextFieldTextDidChangeNotification, object: nil)
     }
 
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+
     func textFieldEdited(aNotificaiton: NSNotification) {
         if self == aNotificaiton.object! as! SSValidationTextField {
             var currentString = self.text
@@ -57,20 +61,22 @@ class SSValidationTextField: UITextField {
         delayTimer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(delaytime), target: self, selector: "checkValidity", userInfo: nil, repeats: false)
     }
 
-    func checkValidity() {
+    func checkValidity() -> Bool {
         var currentString = self.text
         if currentString.isEmpty {
             if errorLabel != nil {
                 errorLabel!.hidden = true
             }
-            return
+            return false
         }
         if self.validityFunction!(currentString) {
             println("yes is valid")
             self.setLabel(true)
+            return true
         } else {
             println("no not valid")
             self.setLabel(false)
+            return false
         }
     }
 

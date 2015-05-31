@@ -2,27 +2,60 @@
 A UITextField class in Swift that helps the user show an validation message right under the textField. 
 
 To use it, copy SSValidationTextField class to project. Either set this class as custom class in Storyboard or create an object programmatically. Set error and success messages for validations and you are good to go.
+![Demo](https://github.com/shamasshahid/SSRadioButtonsController/blob/master/demoRadioButtons.gif?raw=true)
+
 
 ###Sample Code
 A sample code would look like this
 
 
 ```
-var radioButtonController = SSRadioButtonsController()
-radioButtonController.setButtonsArray([button1!,button2!,button3!])
+var phoneValidationTextField = SSValidationTextField(frame: CGRectMake(200, 200, 150, 50))
+phoneValidationTextField.validityFunction = self.isValidPhone
+phoneValidationTextField.delaytime = 0.5
+phoneValidationTextField.errorText = "Incorrect Format"
+phoneValidationTextField.successText = "Valid Format"
+phoneValidationTextField.borderStyle = UITextBorderStyle.RoundedRect
+self.addSubview(phoneValidationTextField)
 ```
 
-### Add or Remove buttons
-You can add/remove buttons from controller by 
+### Validity Function
+Function to check validity is provided by the user. This function is called by SSValidationTextField. It should intake a String object and return Bool value based on whether the String was of valid format or not. For instance, it should be soemthing like 
+```
+func isValidEmail(stringValue: String) ->Bool {
+    let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+    let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+    return emailTest.evaluateWithObject(stringValue)
+}
+```
+
+### Delay Timer
+Set after how much delay of the last input by user, should the validity function be called. Setting it to 0 would never call the validity function and means you will manually call the validity function. 
+
 
 ```
-radioButtonController.addButton(button1!)
-radioButtonController.removeButton(button3!)
+phoneValidationTextField.delaytime = 0.5
 ```
 
-### Get currently selected button
-To get the currently selected button, you can use 
+### Check Validity
+Manually check validity of the textField. Return true or false. 
 
 ```
-var currentButton = radioButtonController.selectedButton()
+var result = phoneValidationTextField.checkValidity()
+```
+
+### Set Error/Success Text
+Set texts to be displayed in case of valid or invalid inputs. 
+```
+phoneValidationTextField.errorText = "Incorrect Format"
+phoneValidationTextField.successText = "Valid Format"
+```
+
+### Customize Error/Success Label
+Additionally you could set textColor and backgroundColor for Error and Success labels individually. 
+```
+phoneValidationTextField.errorTextColor = UIColor.blackColor()
+phoneValidationTextField.errorBackgroundColor = UIColor.redColor()
+phoneValidationTextField.successText = UIColor.whiteColor()
+phoneValidation.successBackgroundColor = UIColor.greenColor()
 ```

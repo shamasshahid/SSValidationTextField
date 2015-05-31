@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         phoneValidationTextField!.placeholder = "Phone Validation"
         phoneValidationTextField!.font = UIFont.systemFontOfSize(14)
         self.view.addSubview(phoneValidationTextField!)
-        phoneValidationTextField!.checkValidity()
 
         layout(emailValidationTextField, phoneValidationTextField!) { view1, view2 in
             view2.height == 50

@@ -2,7 +2,7 @@
 A UITextField class in Swift that helps the user show an validation message right under the textField. 
 
 To use it, copy SSValidationTextField class to project. Either set this class as custom class in Storyboard or create an object programmatically. Set error and success messages for validations and you are good to go.
-![Demo](https://github.com/shamasshahid/SSRadioButtonsController/blob/master/demoRadioButtons.gif?raw=true)
+![Demo](https://github.com/shamasshahid/SSValidationTextField/blob/develop/SSValidationdemo.gif?raw=true)
 
 
 ###Sample Code
@@ -20,7 +20,7 @@ self.addSubview(phoneValidationTextField)
 ```
 
 ### Validity Function
-Function to check validity is provided by the user. This function is called by SSValidationTextField. It should intake a String object and return Bool value based on whether the String was of valid format or not. For instance, it should be soemthing like 
+Function to check validity is provided by the user. This function is called by SSValidationTextField. It should intake a String object and return Bool value based on whether the String was of valid format or not. For instance, it should be something like 
 ```
 func isValidEmail(stringValue: String) ->Bool {
     let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"

@@ -38,7 +38,7 @@ Set after how much delay of the last input by user, should the validity function
 phoneValidationTextField.delaytime = 1
 ```
 
-### Check Validity
+### Manually check Validity
 Manually check validity of the textField. Return true or false. 
 
 ```

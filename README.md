@@ -1,7 +1,8 @@
 # SSValidationTextField
-A UITextField class in Swift that helps the user show an validation message right under the textField. 
+A UITextField class in Swift that helps the user show a validation message right under the textField. 
 
 To use it, copy SSValidationTextField class to project. Either set this class as custom class in Storyboard or create an object programmatically. Set error and success messages for validations and you are good to go.
+
 ![Demo](https://github.com/shamasshahid/SSValidationTextField/blob/develop/SSValidationdemo.gif?raw=true)
 
 
@@ -30,11 +31,11 @@ func isValidEmail(stringValue: String) ->Bool {
 ```
 
 ### Delay Timer
-Set after how much delay of the last input by user, should the validity function be called. Setting it to 0 would never call the validity function and means you will manually call the validity function. 
+Set after how much delay of the last input by user, should the validity function be called. Setting it to 0 would never call the validity function and means you will manually call it. Default value is 0.5 secs.
 
 
 ```
-phoneValidationTextField.delaytime = 0.5
+phoneValidationTextField.delaytime = 1
 ```
 
 ### Check Validity

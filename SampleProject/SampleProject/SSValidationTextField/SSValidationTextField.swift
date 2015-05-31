@@ -11,7 +11,7 @@ import UIKit
 class SSValidationTextField: UITextField {
 
     var validityFunction: ((String) -> Bool)?
-    var delaytime: NSTimeInterval = 0
+    var delaytime: NSTimeInterval = 0.5
     private var delayTimer: NSTimer? = nil
     private var errorLabel: UILabel? = nil
 

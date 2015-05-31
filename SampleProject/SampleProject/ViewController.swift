@@ -22,12 +22,14 @@ class ViewController: UIViewController {
 
         phoneValidationTextField = SSValidationTextField(frame: CGRectMake(200, 200, 150, 50))
         phoneValidationTextField!.validityFunction = self.isValidPhone
+        phoneValidationTextField!.delaytime = 1
         phoneValidationTextField!.errorText = "Incorrect Format"
         phoneValidationTextField!.successText = "Valid Format"
         phoneValidationTextField!.borderStyle = UITextBorderStyle.RoundedRect
         phoneValidationTextField!.placeholder = "Phone Validation"
         phoneValidationTextField!.font = UIFont.systemFontOfSize(14)
         self.view.addSubview(phoneValidationTextField!)
+        phoneValidationTextField!.checkValidity()
 
         layout(emailValidationTextField, phoneValidationTextField!) { view1, view2 in
             view2.height == 50

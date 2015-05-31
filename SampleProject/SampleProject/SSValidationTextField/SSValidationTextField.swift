@@ -9,17 +9,36 @@
 import UIKit
 @IBDesignable
 class SSValidationTextField: UITextField {
-
+    /**
+        Validity Function to check whether the input string is valid or not. Such a function should take a String parameter and return Bool.
+    
+        :param: validityFunction A function that would intake a String and return Bool
+    */
     var validityFunction: ((String) -> Bool)?
+    /**
+        After how much delay (in seconds) since last input to textField should the validity check be performed. Default value is 0.5. Setting this value to 0 would never automatically call the validity function and users is expected to call it themselves.
+    */
     var delaytime: NSTimeInterval = 0.5
     private var delayTimer: NSTimer? = nil
     private var errorLabel: UILabel? = nil
 
     @IBInspectable var errorText: String = "Invalid"
+    /**
+        Set color for error text message label.
+    */
     var errorTextColor: UIColor = UIColor.redColor()
+    /**
+        Set background color for error text message label.
+    */
     var errorBackgroundColor: UIColor = UIColor.clearColor()
     @IBInspectable var successText: String = "Ok"
+    /**
+        Set color for success text message label.
+    */
     var successTextColor: UIColor = UIColor.greenColor()
+    /** 
+        Set background color for success text message label.
+    */
     var successBackgroundColor: UIColor = UIColor.clearColor()
 
     private var animationDuration: NSTimeInterval = 0.1
@@ -60,7 +79,11 @@ class SSValidationTextField: UITextField {
         }
         delayTimer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(delaytime), target: self, selector: "checkValidity", userInfo: nil, repeats: false)
     }
+/**
+    When called manually, performs the validity check, sets the appropriate label and returns bool whether validation was successful or not.
 
+    :returns: A Bool whether validation was successful or not.
+*/
     func checkValidity() -> Bool {
         var currentString = self.text
         if currentString.isEmpty {

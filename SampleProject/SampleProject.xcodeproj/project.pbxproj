@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AC6F6E11B1F535F002C3404 /* SSValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC6F6E01B1F535F002C3404 /* SSValidationTextField.swift */; };
 		1AFE8D121B1A13CC00CFB2DA /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8CFC1B1A13CC00CFB2DA /* Align.swift */; };
 		1AFE8D131B1A13CC00CFB2DA /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8CFE1B1A13CC00CFB2DA /* Coefficients.swift */; };
 		1AFE8D141B1A13CC00CFB2DA /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE8CFF1B1A13CC00CFB2DA /* Compound.swift */; };
@@ -34,7 +35,6 @@
 		2DD57D091B1860A4001BCAF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD57D081B1860A4001BCAF8 /* Images.xcassets */; };
 		2DD57D0C1B1860A4001BCAF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD57D0A1B1860A4001BCAF8 /* LaunchScreen.xib */; };
 		2DD57D181B1860A4001BCAF8 /* SampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD57D171B1860A4001BCAF8 /* SampleProjectTests.swift */; };
-		2DD57D251B186128001BCAF8 /* SSValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD57D241B186128001BCAF8 /* SSValidationTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC6F6E01B1F535F002C3404 /* SSValidationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSValidationTextField.swift; sourceTree = "<group>"; };
 		1AFE8CFC1B1A13CC00CFB2DA /* Align.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Align.swift; sourceTree = "<group>"; };
 		1AFE8CFD1B1A13CC00CFB2DA /* Cartography.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cartography.h; sourceTree = "<group>"; };
 		1AFE8CFE1B1A13CC00CFB2DA /* Coefficients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coefficients.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		2DD57D111B1860A4001BCAF8 /* SampleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD57D161B1860A4001BCAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DD57D171B1860A4001BCAF8 /* SampleProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleProjectTests.swift; sourceTree = "<group>"; };
-		2DD57D241B186128001BCAF8 /* SSValidationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSValidationTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC6F6DF1B1F535F002C3404 /* SSValidationTextField */ = {
+			isa = PBXGroup;
+			children = (
+				1AC6F6E01B1F535F002C3404 /* SSValidationTextField.swift */,
+			);
+			path = SSValidationTextField;
+			sourceTree = "<group>";
+		};
 		1AFE8CFB1B1A13CC00CFB2DA /* Cartography */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +159,7 @@
 		2DD57CFE1B1860A4001BCAF8 /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
-				2DD57D231B186128001BCAF8 /* SSValidationTextField */,
+				1AC6F6DF1B1F535F002C3404 /* SSValidationTextField */,
 				2DD57D011B1860A4001BCAF8 /* AppDelegate.swift */,
 				2DD57D031B1860A4001BCAF8 /* ViewController.swift */,
 				2DD57D051B1860A4001BCAF8 /* Main.storyboard */,
@@ -186,14 +194,6 @@
 				2DD57D161B1860A4001BCAF8 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2DD57D231B186128001BCAF8 /* SSValidationTextField */ = {
-			isa = PBXGroup;
-			children = (
-				2DD57D241B186128001BCAF8 /* SSValidationTextField.swift */,
-			);
-			path = SSValidationTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC6F6E11B1F535F002C3404 /* SSValidationTextField.swift in Sources */,
 				1AFE8D221B1A13CC00CFB2DA /* Priority.swift in Sources */,
 				1AFE8D241B1A13CC00CFB2DA /* Size.swift in Sources */,
 				1AFE8D131B1A13CC00CFB2DA /* Coefficients.swift in Sources */,
@@ -311,7 +312,6 @@
 				1AFE8D151B1A13CC00CFB2DA /* Constraint.swift in Sources */,
 				1AFE8D231B1A13CC00CFB2DA /* Property.swift in Sources */,
 				1AFE8D121B1A13CC00CFB2DA /* Align.swift in Sources */,
-				2DD57D251B186128001BCAF8 /* SSValidationTextField.swift in Sources */,
 				1AFE8D1D1B1A13CC00CFB2DA /* Extensions.swift in Sources */,
 				1AFE8D171B1A13CC00CFB2DA /* Context.swift in Sources */,
 				1AFE8D141B1A13CC00CFB2DA /* Compound.swift in Sources */,
